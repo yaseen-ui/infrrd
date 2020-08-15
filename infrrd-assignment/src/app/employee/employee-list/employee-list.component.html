@@ -16,7 +16,7 @@
       <div class="card">
         <div class="row">
           <div class="col-md-12 form-group">
-            <img [src]="'/assets/images/avatars/'+ list.avatar" height="80" />
+            <img [src]="'assets/images/avatars/'+ list.avatar" height="80" />
             <button class="btn btn-danger btn-sm float-right" (click)="deleteRecord(i)">Delete</button>
             <button class="btn btn-primary btn-sm float-right" [routerLink]="['/employee/edit', list.id]">Edit</button>
           </div>

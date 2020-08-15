@@ -32,7 +32,7 @@
       <ng-select placeholder="designation" [options]="metaData.designations" [(ngModel)]="employeeData.designation">
         <ng-template #optionTemplate let-option="option">
           {{option?.value}}
-          <img [src]="'/assets/images/avatars/'+ option.avatar" height="40" />
+          <img [src]="'assets/images/avatars/'+ option.avatar" height="40" />
         </ng-template>
       </ng-select>
     </div>

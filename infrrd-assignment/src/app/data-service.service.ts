@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class DataServiceService {
 
-  private REST_API_SERVER = "/assets/jsons/";
+  private REST_API_SERVER = "assets/jsons/";
 
   constructor(private httpClient: HttpClient) { }
 
