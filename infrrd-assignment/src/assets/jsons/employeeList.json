@@ -1,0 +1,50 @@
+{
+    "status": true,
+      "employee": [
+        {
+          "id": "1",
+          "name": "Stark",
+          "companyName": "Stark Industries",
+          "designation": "Senior Software Developer",
+          "emailId": "stark@avengers.com",
+          "contactNo": "+1987654321",
+          "avatar": "avatar (1).png"
+        },
+        {
+          "id": "2",
+          "name": "Captain America",
+          "companyName": "Infrrd",
+          "designation": "Manager",
+          "emailId": "captain@infrrd.com",
+          "contactNo": "+1987654311",
+          "avatar": "avatar (2).png"
+        },
+        {
+          "id": "3",
+          "name": "Thor",
+          "companyName": "Google",
+          "designation": "Technical Lead",
+          "emailId": "thor@avengers.com",
+          "contactNo": "+1987654313",
+          "avatar": "avatar (3).png"
+        },
+        {
+          "id": "4",
+          "name": "Captain Marvel",
+          "companyName": "Facebook",
+          "designation": "Developer",
+          "emailId": "marvel@avengers.com",
+          "contactNo": "+1987654314",
+          "avatar": "avatar (4).png"
+        },
+        {
+          "id": "5",
+          "name": "Hulk",
+          "companyName": "Amazon",
+          "designation": "Qulaity Assurance",
+          "emailId": "hulk@avengers.com",
+          "contactNo": "+1987654315",
+          "avatar": "avatar (5).png"
+        }
+      ]
+  }

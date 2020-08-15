@@ -1,0 +1,25 @@
+{
+    "status": true,
+    "designations": [
+      {
+        "avatar": "avatar (1).png",
+        "value": "Software Developer"
+      },
+      {
+        "avatar": "avatar (2).png",
+        "value": "Senior Software Developer"
+      },
+      {
+        "avatar": "avatar (3).png",
+        "value": "Quality Assurance"
+      },
+      {
+        "avatar": "avatar (4).png",
+        "value": "Technical Lead"
+      },
+      {
+        "avatar": "avatar (5).png",
+        "value": "Manager"
+      }
+    ]
+  }

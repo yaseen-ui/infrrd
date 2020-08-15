@@ -1,0 +1,38 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page">Employee List</li>
+  </ol>
+</nav>
+
+<div class="row" *ngIf="employeeList">
+  <div class="col-md-8 form-group">
+    <input class="form-control" [(ngModel)]="filterObj.name" placeholder="search employee by name..">
+  </div>
+  <div class="col-md-4 form-group">
+    <button class="btn btn-primary float-right" (click)="moveToAdd()">Add Employee</button>
+  </div>
+  <ng-container *ngFor="let list of employeeList | filterBy: filterObj; let i = index">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <img [src]="'/assets/images/avatars/'+ list.avatar" height="80" />
+            <button class="btn btn-danger btn-sm float-right" (click)="deleteRecord(i)">Delete</button>
+            <button class="btn btn-primary btn-sm float-right" [routerLink]="['/employee/edit', list.id]">Edit</button>
+          </div>
+          <div class="col-md-6">
+            <h5>{{list.name}}</h5>
+            <label>{{list.designation}}</label>
+          </div>
+          <div class="col-md-6">
+            <div class="float-right">
+              <label><b>Company:</b> {{list.companyName}}</label>
+              <label><b>Phone:</b> {{list.contactNo}}</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+  <label *ngIf="(employeeList | filterBy: filterObj).length === 0">No Matching Employee</label>
+</div>
